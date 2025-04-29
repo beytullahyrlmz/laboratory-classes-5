@@ -1,0 +1,11 @@
+<div class="card">
+    <img src="https://via.placeholder.com/150" alt="<%= product.name %>" class="card__image">
+    <h3 class="card__title"><%= product.name %></h3>
+    <p class="card__description"><%= product.description %></p>
+    <p class="card__price"><%= product.price %> PLN</p>
+    <form method="POST" action="/add">
+      <input type="hidden" name="name" value="<%= product.name %>">
+      <button type="submit">Add to Cart</button>
+    </form>
+  </div>
+  

@@ -9,6 +9,16 @@
         <%= link.label %>
       </a>
     </li>
+    <li class="navigation__item navigation__cart">
+      Cart
+      <img 
+        alt="Cart" 
+        class="navigation__cart" 
+        src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/shopping-cart.svg"
+      >
+      <span class="navigation__badge"><%= cartCount %></span>
+    </li>
+    
     <% }); %> <% } %>
   </ul>
 </nav>
